@@ -147,7 +147,7 @@ text-decoration-line: underline;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1060px;
 }
 
 .projects {
@@ -169,8 +169,27 @@ text-decoration-line: underline;
 }
 
 .card3 {
-    position: absolute;
+    position: relative;
     width: 500px;
     height: 500px;
-    margin-left: 28%;
+    margin-left: 30%;
+    margin-top: -50px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .card1 {
+        width: 300px;
+    }
+    .card2 {
+        width: 300px;
+        margin-top: 110%;
+        margin-left: -0px;
+        
+    }
+    .card3 {
+        width: 300px;
+        margin-left: -0px;
+        margin-top: -200px;
+    }
 }
