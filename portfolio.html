@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <script src="https://use.typekit.net/mcr8wjk.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
     <script src="https://use.fontawesome.com/146c7052c9.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,30 +24,30 @@
         </a>
         <ul class="right hide-on-med-and-down">
             <li>
-                <a href="sass.html">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="badges.html">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="collapsible.html">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="mobile.html">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li>
-                <a href="sass.html">Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="badges.html">About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a href="collapsible.html">Projects</a>
+                <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="mobile.html">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -65,7 +67,7 @@
         <li>
             <img src="https://static.pexels.com/photos/34088/pexels-photo.jpg">
             <!-- random image -->
-            <div class="caption left-align">
+            <div class="caption left-align titleText">
                 <h3>Front-end web development</h3>
                 <h5 class="light grey-text text-lighten-3">I love working with HTML, CSS and Javascript!</h5>
             </div>
@@ -73,7 +75,7 @@
         <li>
             <img src="https://static.pexels.com/photos/160109/pexels-photo-160109.jpeg">
             <!-- random image -->
-            <div class="caption right-align">
+            <div class="caption right-align titleText">
                 <h3>Back-end web development</h3>
                 <h5 class="light grey-text text-lighten-3">Also, love working with the server, the database, and the server-side applications</h5>
             </div>
@@ -82,7 +84,7 @@
 </div>
 
 <!-- ABOUT ME -->
-<div class="container2">
+<div id="about" class="container2">
 <div class="wrapper">
     <h2 class="about">About</h2>
     <div class="roles">
@@ -91,7 +93,7 @@
         </div>
 
         <div>
-            I'm a Student
+            I'm a curious
         </div>
 
         <div>
@@ -100,7 +102,7 @@
     </div>
 </div>
 
-<div class="col s12 m8 offset-m2 l6 offset-l3">
+<div class="col s12 m8 offset-m2 l6 offset-l3 aboutBox">
     <div class="card-panel grey lighten-5 z-depth-1">
         <div class="row valign-wrapper">
             <div class="col s2">
@@ -111,7 +113,7 @@
                 <span class="black-text">
                   Always passionate
                   about technology and currently graduated from “Ironhack”, an intensive learning project specialized in programming. Mastering
-                  programming technologies like Node.js, ES6, Express, and HTML & CSS, I belief in constant education development.
+                  programming technologies like Node.js, Mongo.db, ES6, Express, and HTML & CSS, I belief in constant education development.
                 </span>
             </div>
         </div>
@@ -119,9 +121,9 @@
 </div>
 
 <div class="buttons grid-example col s12 m6">
- <a class="waves-effect waves-light btn-large" href="Luis-Carlos-CV.pdf" target="_blank">
+ <a class="waves-effect waves-light btn-large cvButton" href="Luis-Carlos-CV.pdf" target="_blank">
    <i class="material-icons left">cloud_download</i>Resume</a>
- <a class="waves-effect waves-light btn-large" href="https://www.linkedin.com/in/luis-carlos-perez-3b3195a6" target="_blank">
+ <a class="waves-effect waves-light btn-large linkedinButton" href="https://www.linkedin.com/in/luis-carlos-perez-3b3195a6" target="_blank">
   <i class="fa fa-linkedin-square left"></i>My Linkedin</a>
 </div>
 
@@ -145,11 +147,15 @@
     <div class="devicon node"></div>
     <div class="devicon typescript"></div>
 </div>
+<div class="tech">
+    <div class="devicon materialize"></div>
+    <div class="devicon foundation"></div>
+</div>
 </div>
 </div>
 
 <!-- PROJECTS! -->
-<div class="container3 wrapper">
+<div id="projects" class="container3 wrapper">
     <h2 class="projects">Projects</h2>
 <div class="card1">
     <div class="col s12 m7">
@@ -189,7 +195,7 @@
                 </span>
             </div>
             <div class="card-action">
-                <a href="#">Visit museum</a>
+              <a href="https://virtuseum.herokuapp.com/" target="_blank">Visit museum</a>
             </div>
             <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Virtual Museum
@@ -234,6 +240,46 @@
  </div>
 </div>
 </div>
+
+<!-- CONTACT -->
+<div id="contact" class="container4">
+    <div class="wrapper">
+        <h2 class="about">Contact Me</h2>
+        <div class="phone">
+            <i class=" medium material-icons">phone_in_talk</i>
+            <h5 class="number">(+36) 30 528 7465</h5>
+        </div>
+        <div class="mail">
+            <i class=" medium material-icons">email</i>
+            <h5 class="email">luiscarlos3106@gmail.com</h5>
+        </div>
+    </div>    
+</div>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Connect With Me</h5>
+                <div class="iconsFooter">
+                 <a href="https://github.com/Luisca108" target="_blank">
+                  <i id="git" class="fa fa-github fa-3x" aria-hidden="true"></i>
+                 <a href="https://www.linkedin.com/in/luis-carlos-perez-3b3195a6" target="_blank">
+                  <i id="linkedin" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                 <a href="#">
+                  <i id="home" class="fa fa-home fa-3x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+             Copyright © Luis Carlos Perez 2017
+        </div>
+    </div>
+</footer>
+
 
 <!-- SCRIPTS! -->
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
