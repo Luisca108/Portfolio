@@ -153,13 +153,13 @@ text-decoration-line: underline;
 }
 
 /* PROJECTS! */
-.container3 {
+.container3 {   
     background-image: url('https://www.xmple.com/wallpaper/gradient-white-grey-linear-1920x1080-c2-ffffff-d3d3d3-a-240-f-14.svg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1060px;
+    height: 1070px;
 }
 
 .projects {
@@ -188,7 +188,7 @@ text-decoration-line: underline;
     margin-top: -50px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .aboutBox {
         padding: 20px;
@@ -198,27 +198,35 @@ text-decoration-line: underline;
         margin-top: 200px;
         margin-left: -10px;
     }
+    .projects {
+        padding: 20px;
+        margin-top: -50px;
+    }
     .card1 {
         width: 300px;
+        padding: 20px;
+        position: relative;
     }
     .card2 {
         width: 300px;
-        margin-top: 110%;
         margin-left: -0px;
-        
+        padding: 20px;
+        margin-top: -190px;
+        position: absolute;
     }
     .card3 {
         width: 300px;
         margin-left: -0px;
-        margin-top: -200px;
+        padding: 20px;
+        position: absolute;
+        margin-top: 100px;
     }
     .cvButton {
         margin-left: 80px;
     }
     .linkedinButton {
-        position: absolute;
         margin-top: 10px;
-        margin-left: 70px;
+        margin-left: 80px;
     }
 }
 
